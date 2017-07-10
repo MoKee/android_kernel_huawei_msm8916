@@ -1,0 +1,66 @@
+# Huawei configuration options
+
+config MACH_HUAWEI
+	bool "Huawei device"
+	depends on ARCH_MSM
+	help
+	  Support for Huawei products
+
+config MACH_HUAWEI_MSM8916
+	bool "HUAWEI MSM8916"
+	depends on ARCH_MSM8916
+	select MACH_HUAWEI
+	help
+	  Support for MSM8916 Huawei variants
+
+menu "Huawei board selection"
+
+config MACH_C8817D
+	bool "C8817D board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei C8817D variant
+
+config MACH_C8817E
+	bool "C8817E board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei C8817E variant
+
+config MACH_G620S_UL00
+	bool "G620S_UL00 board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei G620S_UL00 variant
+
+config MACH_G620S_L01
+	bool "G620S_L01 board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei G620S_L01 variant
+
+config MACH_G621_TL00
+	bool "G621_TL00 board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei G621_TL00 variant
+
+config MACH_CHE1_CL10
+	bool "CHE1_CL10 board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei CHE1_CL10 variant
+
+config MACH_CHE1_CL20
+	bool "CHE1_CL20 board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei CHE1_CL20 variant
+
+config MACH_CHE1_L04
+	bool "CHE1_L04 board"
+	select MACH_HUAWEI_MSM8916
+	help
+	  Support for Huawei CHE1_L04 variant
+
+endmenu

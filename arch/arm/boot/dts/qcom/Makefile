@@ -90,6 +90,21 @@ else ifeq ($(CONFIG_MACH_WINGTECH_MSM8916),y)
 dtb-$(CONFIG_ARCH_MSM8916) += msm8916-t86519a1.dtb
 else ifeq ($(CONFIG_MACH_YULONG_MSM8939),y)
 dtb-$(CONFIG_ARCH_MSM8916) += msm8939-cp8675-i01-p0.dtb
+else ifeq ($(CONFIG_MACH_HUAWEI_MSM8916),y)
+dtb-$(CONFIG_ARCH_MSM8916) += msm8916-qrd-c8817d.dtb \
+	msm8916-qrd-c8817e.dtb \
+	msm8916-qrd-g620s_ul.dtb \
+	msm8916-qrd-g620s_l01.dtb \
+	msm8916-qrd-g620s_l02.dtb \
+	msm8916-qrd-g621_tl00.dtb \
+	msm8916-qrd-che1-cl10_vb.dtb \
+	msm8916-qrd-che1-cl10_vc.dtb \
+	msm8916-qrd-che1-cl10_vd.dtb \
+	msm8916-qrd-che1-cl20_vb.dtb \
+	msm8916-qrd-che1-cl20_vc.dtb \
+	msm8916-qrd-che1-cl20_vd.dtb \
+	msm8916-qrd-che1-l04_va.dtb \
+	msm8916-qrd-che1-l04_vb.dtb
 else
 dtb-$(CONFIG_ARCH_MSM8916) += msm8916-cdp.dtb \
 	msm8916-cdp-smb1360.dtb \
